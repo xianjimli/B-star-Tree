@@ -86,7 +86,7 @@ typedef struct _bt_page {
     bt_node *node;
     u32 diskOffset;
 } __attribute__((packed)) bt_page;
-
+/* The BTHANDLE is a pointer to a bt_tree */
 typedef struct _bt_tree {
     FILE *btFile;
     char indexName[32];
