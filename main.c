@@ -10,10 +10,10 @@
 int uniqueRandom(int size);
 
 int main(int argc, const char * argv[]) {
-    uniqueRandom(101);
     bt_payload entry, *found;
     BTHANDLE tree = bt_create("teste", 64);
     srand(time(NULL));
+	uniqueRandom(100);
     /* insert 100 random entries */
     for (int i = 0; i < 100; i++) {
         entry.key = uniqueRandom(0);
@@ -27,8 +27,6 @@ int main(int argc, const char * argv[]) {
             printf("Chave: %u\n Valor: %u\n\n", found->key, found->value);
         }
     }
-    // insert code here...
-    printf("Hello, World!\n");
     return 0;
 }
 
