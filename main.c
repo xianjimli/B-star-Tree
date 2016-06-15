@@ -1,8 +1,3 @@
-/*
- Cristiano Carvalho Lacerda: 8531737
- Joice  Aurino Lima: 8530851
- Leando Kondo:8921291
- */
 #include <stdio.h>
 #include "btree.h"
 #include <stdlib.h>
